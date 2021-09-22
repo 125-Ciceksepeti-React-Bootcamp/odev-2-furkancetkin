@@ -1,0 +1,156 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: wheat;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.header {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 1fr 5fr;
+      grid-template-columns: 1fr 5fr;
+  height: 100px;
+}
+
+.header__logo {
+  -o-object-fit: cover;
+     object-fit: cover;
+  float: right;
+  height: 100px;
+  width: 100px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.header__title {
+  margin: 0;
+  color: #333333;
+  text-align: right;
+  margin-right: 25px;
+}
+
+.cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.cards__cardBody {
+  height: 400px;
+  width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 25px auto;
+  text-align: center;
+  -webkit-box-shadow: 0 10px 36px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 10px 36px rgba(0, 0, 0, 0.3);
+}
+
+.cards__cardImage {
+  height: 200px;
+  width: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+
+.cards__cardTitle {
+  color: #008cba;
+}
+
+.cards__cardInfo {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cards__cardButtonField {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cards__cardButton {
+  background-color: #3194bb;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  cursor: pointer;
+  width: 320px;
+}
+
+.cards__cardText {
+  margin: 5px 0;
+}
+
+.footer {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin-top: 20px;
+  height: 100px;
+  width: 100%;
+  color: #333333;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 30px;
+  font-size: 18px;
+  width: 200px;
+  height: 50px;
+  background-color: #333333;
+  border-radius: 8px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer a:hover {
+  color: #3194bb;
+}
+/*# sourceMappingURL=app.css.map */
